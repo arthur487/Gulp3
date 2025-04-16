@@ -6,7 +6,7 @@ const sourceMaps = require('gulp-sourcemaps')
 const obfuscate = require("gulp-obfuscate")
 
 function Comprimesass() {
-    return gulp.src('./sources/styles/*.main.scss')
+    return gulp.src('./sources/styles/main.scss')
         .pipe(Sass({
             outputstyle: 'compressed'
         }))
@@ -20,7 +20,7 @@ function ComprimejavaScript() {
 }
 
 function ComprimeImages() {
-    return gulp.src('/sources/images/*')
+    return gulp.src('./sources/images/*')
         .pipe(image())
         .pipe(gulp.dest('./build/images'));
 }

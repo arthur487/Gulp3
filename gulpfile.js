@@ -10,7 +10,7 @@ function Comprimesass() {
         .pipe(Sass({
             outputstyle: 'compressed'
         }))
-        .pipe(gulp.dest('./build/styles/*.css')).pipe(sourceMaps.write("./maps")).pipe(gulp.dest('./build/styles'));
+        .pipe(gulp.dest('./build/styles')).pipe(sourceMaps.write("./maps")).pipe(gulp.dest('./build/styles'));
 }
 
 function ComprimejavaScript() {
